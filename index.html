@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PortExamples</title>
+</head>
+<body>
+<div id="elm-f0111bc4e658d0f98db96260c16f7e49"></div>
+<script>
+  app.ports.sendData.subscribe(function(data) {
+    console.log("Data from Elm: ", data);
+    app.ports.receiveData.send("Hey Elm!");
+  });
+</script>
+</body>
+</html>
